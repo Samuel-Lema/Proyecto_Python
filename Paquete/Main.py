@@ -10,6 +10,11 @@ from Paquete import GestionFacturas
 
 class Main(Gtk.Window):
 
+    '''
+    Genera 5 botones para el accesso a cada ventana propia del programa
+    (Clientes, Coches, LIstado, Facturas y Salir)
+    '''
+
     def __init__(self):
         Gtk.Window.__init__(self, title="Principal")
 
@@ -80,7 +85,6 @@ class Main(Gtk.Window):
         btnGesSalir.connect("clicked", self.on_btn_salir)
 
     def on_btn_coches (self, button):
-
         GestionCoches.GestionCoches().show_all()
 
     def on_btn_clientes (self, button):

@@ -4,6 +4,11 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 class GestionClientes(Gtk.Window):
+
+    '''
+    Permite crear, modificar y eliminar clientes de la BBDD
+    '''
+
     def __init__(self):
         Gtk.Window.__init__(self, title="Gestión de Clientes")
 

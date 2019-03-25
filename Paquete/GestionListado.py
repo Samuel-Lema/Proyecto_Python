@@ -4,6 +4,11 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 class GestionListado(Gtk.Window):
+
+    '''
+    Permite consultar un listado de clientes /coches existentes en la BBDD
+    '''
+
     def __init__(self):
         Gtk.Window.__init__(self, title="Lista General")
         self.set_default_size(250, 100)
@@ -75,6 +80,11 @@ class GestionListado(Gtk.Window):
             bbdd.close()
 
     def on_changed(self, selection):
+        """
+        funcion
+        :param selection: 4rff4r
+        :return: 43t3
+        """
 
         (model, iter) = selection.get_selected()
 

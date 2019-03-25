@@ -11,6 +11,10 @@ from reportlab.lib import colors
 
 class GestionFacturas(Gtk.Window):
 
+    '''
+    Permite crear facturas a partir de un cliente, uno de sus coches y un precio unitario
+    '''
+
     def __init__(self):
         Gtk.Window.__init__(self, title="Gestión de Facturas")
 

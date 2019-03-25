@@ -5,10 +5,16 @@ from gi.repository import Gtk
 
 class GestionCoches(Gtk.Window):
 
+    '''
+    Permite crear, modificar y eliminar coches de la BBDD
+    '''
+
     def __init__(self):
+
         Gtk.Window.__init__(self, title="Gestión de Coches")
 
         # DECLARO LA VENTANA PRINCIPAL
+
         self.caixaventana = Gtk.Box(spacing=10)
         self.caixaventana.set_orientation(Gtk.Orientation.HORIZONTAL)
         self.caixaventana.set_margin_left(10)
