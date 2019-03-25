@@ -1,0 +1,7 @@
+#!usr/bin/python3
+from gi.repository import Gtk
+from Paquete import Main
+
+Main.Main()
+Gtk.main()
+
